@@ -1,8 +1,15 @@
 import Foundation
 
-struct Model {
-    var avatarImage: String
-    var name: String
-    var image: String
-    var description: String
+struct Post {
+    let avatarImage: String
+    let name: String
+    let image: String
+    let description: String
+    
+    init(avatarImage: String, name: String, image: String, description: String) {
+        self.avatarImage = avatarImage
+        self.name = name
+        self.image = image
+        self.description = "\(name): \(description)"
+    }
 }
